@@ -1,0 +1,118 @@
+/* HEADER */
+header {
+  padding: 20px 20px 0 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: grid;
+  grid-gap:5px;
+  grid-template-columns: 1fr 4fr 1fr;
+  grid-template-areas:
+   "nt mn mn sb . . . ";
+  //background-color: var(--primary);
+  background-color: black;
+  width: 100%;
+  height: 80px;
+  margin-bottom: 0px;
+  z-index: 5000;
+}
+
+.netflixLogo {
+  position: absolute;
+  top:-30px;
+  left:0;
+  grid-area: nt;
+  object-fit: cover;
+  width: 100px;
+  max-height: 100%;
+  padding-left: 30px;
+  padding-top: 0px;
+}
+
+.netflixLogo img {
+  position: absolute;
+  top:0;
+  left:0;
+  height: 100px;
+  width: auto;
+}
+
+#logo {
+  color: #E50914;
+  margin: 0;
+  padding: 0;
+}
+
+
+.main-nav {
+  grid-area: mn;
+  padding: 0 30px 0 20px;
+  color: white;
+}
+
+.main-nav a {
+  color: var(--light);
+  text-decoration: none;
+  margin: 5px;
+}
+
+.main-nav a:hover {
+  //color: var(--dark);
+  color: gray;
+}
+
+.sub-nav {
+  grid-area: sb;
+  padding: 0 40px 0 40px;
+  color: white;
+}
+
+.sub-nav a {
+  //color: var(--light);
+  color: white;
+  text-decoration: none;
+  margin: 5px;
+}
+
+.sub-nav a:hover {
+  //color: var(--dark);
+  color: gray;
+}
+
+/*FOOTER*/
+.footer {
+    max-width: 70%;
+    margin: 1rem auto;
+    overflow: auto;
+}
+
+.footer,
+.footer a {
+    color: #999;
+    font-size: 0.9rem;
+}
+
+.footer p {
+    margin-bottom: 1.5rem;
+}
+
+.footer .footer-cols {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 2rem;
+}
+
+.footer li {
+    line-height: 1.9;
+}
+
+.footer .lang-select {
+    margin-top: 2rem;
+    color: #999;
+    background-color: #000;
+    background-image: none;
+    border: 1px solid #333;
+    padding: 1rem 1.2rem;
+    border-radius: 5px;
+}
+
