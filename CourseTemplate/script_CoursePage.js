@@ -8,9 +8,9 @@ menuToggle.addEventListener('click', () => {
     //console.log(document.getElementById('iframe_Video').getAttribute('data-flag'));
     screenPercentageOf_iframe_Video = 0.9
     if(document.getElementById('iframe_Video').getAttribute('data-flag') == "0"){
-        document.getElementById("iframe_Video").style.left="29%"
-        document.getElementById("iframe_Video").style.width=window.innerWidth*0.69+"px";
-        document.getElementById("iframe_Video").style.height=window.innerHeight*0.69+"px";
+        document.getElementById("iframe_Video").style.left="30%"
+        document.getElementById("iframe_Video").style.width="60vw";
+        document.getElementById("iframe_Video").style.height="33vw";
         document.getElementById('iframe_Video').setAttribute('data-flag', "1");
     }
     else {
