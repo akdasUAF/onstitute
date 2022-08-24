@@ -15,8 +15,8 @@ menuToggle.addEventListener('click', () => {
     }
     else {
         document.getElementById("iframe_Video").style.left="0px";
-        document.getElementById("iframe_Video").style.width=window.innerWidth*screenPercentageOf_iframe_Video + "px";
-        document.getElementById("iframe_Video").style.height=window.innerHeight*screenPercentageOf_iframe_Video + "px";
+        document.getElementById("iframe_Video").style.width="90vw";
+        document.getElementById("iframe_Video").style.height="50vw";
         document.getElementById('iframe_Video').setAttribute('data-flag', "0");
     }
 })
