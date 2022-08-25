@@ -68,6 +68,16 @@ function loadVideo() { //executes onLoad
   iframeVideoContainer.src = urlToDisplay;
 }
 
+function loadVideoConf() {
+    console.log("in loadVideoConf");
+    var iframeVideoContainer = document.getElementById('iframe_CourseVideo');
+    const urlParams = new URLSearchParams(window.location.search);
+    const courseIdVal = urlParams.get('courseId');
+    urlToDisplay = "https://zoomnodeclient.herokuapp.com:/meeting.html?name=QmFiYWk%3D&mn=8796560&email=&pwd=763292&role=0&lang=en-US&signature=MG1wUXQxNWNRTDZCenZUanRVcFIydy44Nzk2NTYwLjE2NjE0Njg5NDg3OTkuMC5Oc0MvOWozYTdWaHRHMUEyNXZlSjQ1RlFZcGZrc3JHdDJxZE85Znl6T2lnPQ&china=0&apiKey=0mpQt15cQL6BzvTjtUpR2w";
+    //console.log(urlToDisplay);
+    iframeVideoContainer.src = urlToDisplay;
+}
+
 /* Function to load the content of the right iFrame */
 function loadCourseMaterials(position) { //Similar to loadVideo but executes on button click with dynamic components based on their position
     //console.log("in loadCourseMaterials");
