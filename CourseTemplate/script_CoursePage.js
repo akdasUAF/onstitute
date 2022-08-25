@@ -12,6 +12,7 @@ menuToggle.addEventListener('click', () => {
         document.getElementById("iframe_CourseVideo").style.width="60vw";
         document.getElementById("iframe_CourseVideo").style.height="33vw"; //60*9/16 = 33, YT video resolution is 16:9. (This code maintains the aspect ratio)
         document.getElementById('iframe_CourseVideo').setAttribute('data-flag', "1");
+
         
         //To Do: Code to fit iframe_Cource on mobile device
         //isMobileDevice = window.navigator.userAgent;
@@ -19,7 +20,7 @@ menuToggle.addEventListener('click', () => {
         //console.log(isMobileDevice)
         if(mobileDevice) {
             alert("It feels like you are using a mobile phone. (" + window.innerWidth + ", " + window.innerHeight + "). " + "Please use a computer for better learning experience");
-            document.getElementById("iframe_CourseMaterial").style.height=window.innerHeight/2 + "px";
+            document.getElementById("iframe_CourseMaterial").style.height=window.innerHeight*0.45 + "px";
 
         }
     }
