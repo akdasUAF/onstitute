@@ -18,8 +18,8 @@ menuToggle.addEventListener('click', () => {
         mobileDevice = (window.innerHeight > window.innerWidth)
         //console.log(isMobileDevice)
         if(mobileDevice) {
-            alert("It feels like you are using a mobile device. Please use a computer for better learning experience")
-            document.getElementById("iframe_CourseVideo").style.height=window.innerHeight/2;
+            alert("It feels like you are using a mobile phone." + window.innerWidth + ", " window.innerHeight + "Please use a computer for better learning experience")
+            document.getElementById("iframe_CourseVideo").style.height=window.innerwidth/2;
             
         }
     }
