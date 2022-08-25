@@ -73,7 +73,7 @@ function loadVideoConf() {
     var iframeVideoContainer = document.getElementById('iframe_CourseVideo');
     const urlParams = new URLSearchParams(window.location.search);
     const courseIdVal = urlParams.get('courseId');
-    urlToDisplay = "https://zoomnodeclient.herokuapp.com:/meeting.html?name=QmFiYWk%3D&mn=8796560&email=&pwd=763292&role=0&lang=en-US&signature=MG1wUXQxNWNRTDZCenZUanRVcFIydy44Nzk2NTYwLjE2NjE0Njg5NDg3OTkuMC5Oc0MvOWozYTdWaHRHMUEyNXZlSjQ1RlFZcGZrc3JHdDJxZE85Znl6T2lnPQ&china=0&apiKey=0mpQt15cQL6BzvTjtUpR2w";
+    urlToDisplay = "https://zoomnodeclient.herokuapp.com:/meeting.html?name=QmFiYWk%3D&mn=87965600614&email=&pwd=763292&role=0&lang=en-US&signature=MG1wUXQxNWNRTDZCenZUanRVcFIydy44Nzk2NTYwMDYxNC4xNjYxNDcwMDY4ODE3LjAuS1lwNEZWTzRPemdhUWJ2T2tJNnFsWDBrSkRBemRLLzhmQ2RWVHptVTNhUT0&china=0&apiKey=0mpQt15cQL6BzvTjtUpR2w";
     //console.log(urlToDisplay);
     iframeVideoContainer.src = urlToDisplay;
 }
