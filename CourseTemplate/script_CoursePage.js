@@ -7,17 +7,18 @@ menuToggle.addEventListener('click', () => {
   menuToggle.classList.toggle('active');
   showcase.classList.toggle('active');
     
-    screenPercentageOf_iframe_Video = 0.9
-    if(document.getElementById('iframe_Video').getAttribute('data-flag') == "0"){
-        document.getElementById("iframe_Video").style.left="30%"
+    if(document.getElementById('iframe_Video').getAttribute('data-flag') == "0"){ // DIY coding pane opens video becomes smaller
+        document.getElementById("iframe_Video").style.left="32%"
         document.getElementById("iframe_Video").style.width="60vw";
-        document.getElementById("iframe_Video").style.height="33vw";
+        document.getElementById("iframe_Video").style.height="33vw"; //60*9/16 = 33, YT video resolution is 16:9. (This code maintains the aspect ratio)
         document.getElementById('iframe_Video').setAttribute('data-flag', "1");
+        
+        document.getElementById('iframe_Course').style.height="33vw";
     }
-    else {
+    else { //DIY coding pane closes, video becomes larger
         document.getElementById("iframe_Video").style.left="0px";
         document.getElementById("iframe_Video").style.width="90vw";
-        document.getElementById("iframe_Video").style.height="50vw";
+        document.getElementById("iframe_Video").style.height="50vw"; //0*9/16 = 33, YT video resolution is 16:9. (This code maintains the aspect ratio)
         document.getElementById('iframe_Video').setAttribute('data-flag', "0");
     }
 })
