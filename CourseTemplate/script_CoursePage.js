@@ -14,7 +14,14 @@ menuToggle.addEventListener('click', () => {
         document.getElementById('iframe_CourseVideo').setAttribute('data-flag', "1");
         
         //To Do: Code to fit iframe_Cource on mobile device
-        //document.getElementById('iframe_Course').height="33vw";
+        //isMobileDevice = window.navigator.userAgent;
+        mobileDevice = (window.innerHeight > window.innerWidth)
+        //console.log(isMobileDevice)
+        if(mobileDevice) {
+            alert("It feels like you are using a mobile device. Please use a computer for better learning experience")
+            document.getElementById("iframe_CourseVideo").style.height=window.innerHeight/2;
+            
+        }
     }
     else { //DIY coding pane closes, video becomes larger
         document.getElementById("iframe_CourseVideo").style.left="0px";
