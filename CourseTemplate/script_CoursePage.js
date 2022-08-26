@@ -73,7 +73,6 @@ function loadVideoConf() {
     var iframeVideoContainer = document.getElementById('iframe_CourseVideo');
     var iframeCouseMaterialsContainer = document.getElementById('iframe_CourseMaterial');
     iframeCouseMaterialsContainer.src = "https://zoomnodeclient.herokuapp.com/";
-    iframeVideoContainer.src = urlToDisplay;
 }
 
 /* Function to load the content of the right iFrame */
