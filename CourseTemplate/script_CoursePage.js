@@ -71,10 +71,8 @@ function loadVideo() { //executes onLoad
 function loadVideoConf() {
     console.log("in loadVideoConf");
     var iframeVideoContainer = document.getElementById('iframe_CourseVideo');
-    const urlParams = new URLSearchParams(window.location.search);
-    const courseIdVal = urlParams.get('courseId');
-    urlToDisplay = "https://zoomnodeclient.herokuapp.com:/meeting.html?name=QmFiYWk%3D&mn=87965600614&email=&pwd=763292&role=0&lang=en-US&signature=MG1wUXQxNWNRTDZCenZUanRVcFIydy44Nzk2NTYwMDYxNC4xNjYxNDcwMDY4ODE3LjAuS1lwNEZWTzRPemdhUWJ2T2tJNnFsWDBrSkRBemRLLzhmQ2RWVHptVTNhUT0&china=0&apiKey=0mpQt15cQL6BzvTjtUpR2w";
-    //console.log(urlToDisplay);
+    var iframeCouseMaterialsContainer = document.getElementById('iframe_CourseMaterial');
+    iframeCouseMaterialsContainer.src = "https://zoomnodeclient.herokuapp.com/";
     iframeVideoContainer.src = urlToDisplay;
 }
 
