@@ -30,6 +30,47 @@ h1 {
   margin: 0;
   padding: 0;
 }
+/*Buttons*/
+/* Buttons */
+.btn {
+    display: inline-block;
+    background: #e50914;
+    color: #fff;
+    padding: 0.4rem 1.3rem;
+    font-size: 1rem;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-right: 0.5rem;
+    transition: opacity 0.2s ease-in;
+    outline: none;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.45);
+    border-radius: 2px;
+}
+
+.btn:hover {
+    opacity: 0.9;
+}
+
+.btn-rounded {
+    border-radius: 5px;
+}
+
+.btn-xl {
+    font-size: 2rem;
+    padding: 1.5rem 2.1rem;
+    text-transform: uppercase;
+}
+
+.btn-lg {
+    font-size: 1rem;
+    padding: 0.8rem 1.3rem;
+    text-transform: uppercase;
+}
+
+.btn-icon {
+    margin-left: 1rem;
+}
 
 /* MAIN CONTIANER */
 .main-container {
@@ -132,7 +173,7 @@ h1 {
     grid-gap: 20px;
     grid-template-columns: repeat(3, 1fr);
   }
-   
+
 }
 
 @media(max-width: 500px) {
@@ -173,7 +214,7 @@ h1 {
     font-size: 18px;
   }
 
- 
+
 
   .box {
     display: grid;
@@ -204,8 +245,8 @@ h1 {
     font-size: 15px;
   }
 
-  
 
-  
-   
+
+
+
 }

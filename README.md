@@ -1,2 +1,2 @@
 # onstitute
-Online Education
+Learn Faster than any Institute

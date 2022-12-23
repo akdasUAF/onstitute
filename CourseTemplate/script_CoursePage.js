@@ -6,7 +6,7 @@ menuToggle.addEventListener('click', () => {
   console.log("Clicked");
   menuToggle.classList.toggle('active');
   showcase.classList.toggle('active');
-    
+
   adjustContentSizes();
 })
 
@@ -68,13 +68,6 @@ function loadVideo() { //executes onLoad
   iframeVideoContainer.src = urlToDisplay;
 }
 
-function loadVideoConf() {
-    console.log("in loadVideoConf");
-    var iframeVideoContainer = document.getElementById('iframe_CourseVideo');
-    var iframeCouseMaterialsContainer = document.getElementById('iframe_CourseMaterial');
-    iframeCouseMaterialsContainer.src = "https://zoomnodeclient.herokuapp.com/";
-}
-
 /* Function to load the content of the right iFrame */
 function loadCourseMaterials(position) { //Similar to loadVideo but executes on button click with dynamic components based on their position
     //console.log("in loadCourseMaterials");
@@ -84,15 +77,5 @@ function loadCourseMaterials(position) { //Similar to loadVideo but executes on 
     index = position;
     urlToDisplay = getCourseContentsFromCourseId(courseIdVal).split(",")[index];
     //console.log(urlToDisplay);
-    if(urlToDisplay.includes("+")) { //multiple html to be displayed in one iframe.
-        /*urls = urlToDisplay.split("+");
-        htmlContent = 'data:text/html;charset=utf-8,'
-        for each url in urls {
-            iframeCouseMaterialsContainer.contents().append(url)
-        }
-        iframeCouseMaterialsContainer.src = htmlContent();*/
-    }
-    else {
-      iframeCouseMaterialsContainer.src = urlToDisplay;
-    }
+    iframeCouseMaterialsContainer.src = urlToDisplay;
 }

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>Onstitute F2F Page</title>
+  <link rel="stylesheet" href="./style_F2FPage.css">
+  <link rel="stylesheet" href="../PublicFiles/style_HeaderFooter.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"> <!-- to use font-awesome icons -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+</head>
+<body onload=loadVideoConf()>
+<!-- HEADER-->
+<iframe frameborder="0" width="100%" height="80px" style="position:absolute; top:0; left:0; width="100%"; z-index:5000" src="../PublicFiles/index_Header.html"></iframe>
+<!--HEADER-->
+<div class="toggle"></div>
+  <!-- https://www.pexels.com/video/aerial-view-of-beautiful-resort-2169880/ -->
+  <section class="showcase">
+    <iframe id="iframe_F2FVideo" src="" data-flag="0" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen>
+    </iframe>
+  </section>
+
+  <div class="aboutcourse">
+    <iframe id="iframe_F2FMaterial" style="width: 100%; height: 90%" id="myframe" frameborder="0" src=""></iframe>
+    <div style="position:absolute; bottom:0"> <!--position the ul in the bottom irrespective of any screen -->
+    <ul>
+      <li><a href="#" onclick="loadF2FMaterials(1)"><img src="./images_F2FPage/ide.png" height="40" width="40"></a></li>
+      <li><a href="#" onclick="loadF2FMaterials(2)"><img src="./images_F2FPage/instructor.png" height="40" width="40"></a></li>
+      <li><a href="#" onclick="loadF2FMaterials(3)"><img src="./images_F2FPage/syllabus.png" height="40" width="40"></a></li>
+      <!--<li><a href="#" onclick="generateConfLink()"><img src="./images_F2FPage/zoom.png" height="40" width="40"></a></li>-->
+      <li><a href="#" onclick="loadVideoConf()"><img src="./images_F2FPage/zoom.png" height="40" width="40"></a></li>
+      <li><input type="text" id="textZoomLink"></li>
+    </ul>
+    </div>
+  </div>
+<!-- partial -->
+<!--FOOTER -->
+<!--<iframe width="100%" height="300px" frameborder="0" src="../PublicFiles/index_Footer.html"></iframe>-->
+<!--END OF Footer-->
+
+</body>
+<script  src="./script_F2FPage.js"></script>
+</html>

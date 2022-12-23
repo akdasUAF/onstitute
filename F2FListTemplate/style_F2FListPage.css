@@ -1,0 +1,184 @@
+/* CSS VARIABLES */
+:root {
+  --primary: #141414;
+  --light: #F3F3F3;
+  --dark:     #686868;
+}
+
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:sans-serif;
+}
+html, body {
+  width: 100vw;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  background-color: var(--primary);
+  color: var(--light);
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
+  line-height: 1.4;
+}
+
+h1 {
+  padding-top: 60px;
+}
+
+.wrapper {
+  margin: 0;
+  padding: 0;
+}
+
+.main-container {
+  padding: 50px;
+  display: grid;
+}
+
+.box {
+  display: grid;
+  grid-gap: 40px;
+  grid-template-columns: repeat(3, minmax(100px, 1fr));
+}
+
+.payment {
+  background-image: url('./images_F2FListPage/cashfree.png');
+}
+
+.container{
+  max-width:100%;
+  display: flex;
+  align-items:center;
+  /*justify-content:center;*/
+}
+
+/*Card related*/
+.card{
+  min-height:50px;
+  width:280px;
+  margin:40px 10px;
+  padding:.1rem;/*adjust card height(from upper part)*/
+  cursor:pointer;
+  background-color:#fff;
+}
+.card:hover{
+  transform:scale(1.4);
+  transition: .5s;
+  z-index: 2000;
+}
+.card img{
+  max-width: 100%;
+  border:4px solid white;
+  position:relative;
+  z-index:1000;
+  transition:all .5s ease-in-out;
+}
+.card__content{
+  margin:.2rem 0; /*adjust card height*/
+  color:#222;
+  overflow:hidden;
+  margin-top:-200px;
+  opacity:0;
+  visibility:hidden;
+  transition:all .5s ease-in-out;
+}
+.card__content h4{
+  margin:.7rem auto;/*adjust card height*/
+  text-align:center;
+}
+.card__content p{
+  font-size:1.1rem;
+  line-height:1.8rem;
+  text-align:center;
+}
+.cardbtn{
+  width:200px;
+  padding:10px 15px;
+  display:block;
+  text-align:center;
+  margin:.2rem auto; /*adjust card height*/
+  font-size:1.1rem;
+  color:#fff;
+  text-decoration:none;
+  background-color:#e50914;
+  border-radius:2px;
+  transition:.3s;
+}
+.cardbtn:hover{
+  color:#fff;
+  background-color:#e50914;
+  box-shadow:0 0 4px 4px rgba(0,0,0,0.4);
+}
+.card:hover img{
+  margin-top:-60px;
+  box-shadow:0 0 4px 6px rgba(0,0,0,0.3);
+}
+.card:hover>.card__content{
+  margin-top:0;
+  opacity:1;
+  visibility:visible;
+}
+@media screen and (max-width:800px){
+  .container{
+    flex-wrap:wrap;
+  }
+}
+
+/*FLOATING CONTAINER*/
+  #centerDIV {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(255, 255, 255, 0.75);
+    width: 100%;
+    height: 100%;
+    padding-top: 100px;
+    display: none;	/* keep the element hidden */
+    z-index: 3000;
+  }
+  .divFloat {
+    margin: 0 auto;
+    background-color: #FFF;
+    border: solid 1px #999;
+    color: #000;
+    width: 60%;
+    height: 80%;
+    padding: 20px;
+    -webkit-border-radius: 3px;
+    -webkit-box-orient: vertical;
+    -webkit-transition: 200ms -webkit-transform;
+    box-shadow: 0 4px 23px 5px rgba(0, 0, 0, 0.2), 0 2px 6px rgba(0, 0, 0, 0.15);
+    display: block;
+    z-index: 3000;
+  }
+  .btClickHere {
+    background-color: #587898;
+    border: solid 1px #587898;
+    color: #FFF;
+    -moz-border-radius: 0 7px 7px 0;
+    -webkit-border-radius: 0 7px 7px 0;
+    border-radius: 0 7px 7px 0;
+  }
+  .btClose {
+    margin: 0 auto;
+    background-color: #FFF;
+    color: red;
+    border: none;
+    width: auto;
+    float: right;
+    clear: both;
+  }
+  .btGetPass {
+    color: #FFF;
+    padding: 2px 4px;
+    width: 150px;
+    background-color: #FF780B;
+    border: solid 1px #FF780B;
+    border-top-right-radius: 10px 20px;
+    border-bottom-right-radius: 10px 20px;
+    border-bottom-left-radius: 10px 20px;
+    border-top-left-radius: 10px 20px;
+    display: block;
+  }

@@ -1,11 +1,12 @@
 <!DOCTYPE html>
 <html lang="en" >
-    
+
 <head>
   <meta charset="UTF-8">
   <title>Onstitute Home Page</title>
   <link rel="stylesheet" href="./style_HomePage.css">
   <link rel="stylesheet" href="../PublicFiles/style_HeaderFooter.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"> <!-- to use font-awesome icons -->
   <script src="../PublicFiles/script_PublicFiles.js"></script>
 </head>
@@ -13,23 +14,70 @@
   <!-- HEADER-->
   <iframe width="100%" height="80px" frameborder="0" style="position:sticky; top:0; left:0; z-index:5000" src="../PublicFiles/index_Header.html"></iframe>
   <!--END OF HEADER-->
-  
+
   <!--Promo-->
-  <iframe width="100%" height="120px" frameborder="0" style="position:absolute; bottom:1%; left:0; z-index:3000" src="../PublicFiles/index_PromoHorizontalScroll.html"></iframe>
+  <!--<iframe width="100%" height="120px" frameborder="0" style="position:absolute; bottom:1%; left:0; z-index:3000" src="../PublicFiles/index_PromoHorizontalScroll.html"></iframe>-->
   <!--END OF PROMO-->
-  
+
   <!--MAIN CONTAINER-->
-  <div class="showcase">
-    <div class="showcase-top">
-      <!--<img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />-->
-      <!--<a href="#" class="btn btn-rounded">Sign In</a>-->
+  <div style="transition:all 2s">
+    <button class="w3-button w3-black w3-display-left" style="z-index:100000" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" style="z-index:100000" onclick="plusDivs(1)">&#10095;</button>
+
+    <div id="divSlide" class="showcase" style="background: url('./images_HomePage/backgroundDatascience.jpeg') no-repeat center center/cover">
+      <div class="showcase-top">
+        <!--<img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />-->
+        <!--<a href="#" class="btn btn-rounded">Sign In</a>-->
+      </div>
+      <div class="showcase-content">
+        <h1> Data-Science Dummy? </h1>
+        <p>Learn Faster than any Institute</p>
+        <a href="../FormsTemplate/index_WorkshopRegistrationPage.html" class="btn btn-xl"> Register for a free workshop to know how <i class="fas fa-chevron-right btn-icon"></i></a>
+      </div>
+      <iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="../PublicFiles/index_Upcoming.html"></iframe>
     </div>
-    <div class="showcase-content">
-      <h1> Data-Science Dummy? </h1>
-      <p>Learn Faster than any Institute</p>
-      <a href="../CourseListTemplate/index_CourseListPage.html" class="btn btn-xl"> Explore Our Free Courses <i class="fas fa-chevron-right btn-icon"></i></a>
+
+    <div id="divSlide" class="showcase" style="background: url('./images_HomePage/backgroundProgramming.jpeg') no-repeat center center/cover">
+      <div class="showcase-top">
+        <!--<img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />-->
+        <!--<a href="#" class="btn btn-rounded">Sign In</a>-->
+      </div>
+      <div class="showcase-content">
+        <h1> Programming Beginner? </h1>
+        <p>Get the best trainer </p>
+        <a href="../F2FListTemplate/index_F2FListPage.html" class="btn btn-xl"> Explore our F2F/live lectures <i class="fas fa-chevron-right btn-icon"></i></a>
+      </div>
+      <iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="../PublicFiles/index_Upcoming.html"></iframe>
+    </div>
+
+    <div id="divSlide" class="showcase" style="background: url('./images_HomePage/backgroundValuePrice.jpeg') no-repeat center center/cover">
+      <div class="showcase-top">
+        <!--<img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />-->
+        <!--<a href="#" class="btn btn-rounded">Sign In</a>-->
+      </div>
+      <div class="showcase-content">
+        <h1> Frustrated with Cost? </h1>
+        <p>Start learning free of cost</p>
+        <a href="../CourseListTemplate/index_CourseListPage.html" class="btn btn-xl"> Explore our Free Courses <i class="fas fa-chevron-right btn-icon"></i></a>
+      </div>
+      <iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="../PublicFiles/index_Upcoming.html"></iframe>
+    </div>
+
+    <div id="divSlide" class="showcase" style="background: url('./images_HomePage/backgroundTutoring.jpeg') no-repeat center center/cover">
+      <div class="showcase-top">
+        <!--<img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />-->
+        <!--<a href="#" class="btn btn-rounded">Sign In</a>-->
+      </div>
+      <div class="showcase-content">
+        <h1> Need personal training? </h1>
+        <p>Get a mentor</p>
+        <a href="../FormsTemplate/index_ConsultancyAppointment.html" class="btn btn-xl"> Register for a free consultancy <i class="fas fa-chevron-right btn-icon"></i></a>
+      </div>
+      <iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="../PublicFiles/index_Upcoming.html"></iframe>
     </div>
   </div>
+
+
   <section class="tabs">
     <div class="container">
       <div id="tab-1" class="tab-item tab-border">
@@ -106,7 +154,7 @@
               <td>Course price</td>
               <td>Free</td>
               <td>&#8377;1000</td>
-              <td>&#8377;1800</td>
+              <td>&#8377;1800/hr</td>
             </tr>
             <tr>
               <td>Recorded video lecture</td>
@@ -162,11 +210,11 @@
     </div>
   </section>
   <!-- END OF MAIN CONTAINER -->
-  
+
   <!--FOOTER -->
   <iframe width="100%" height="300px" frameborder="0" src="../PublicFiles/index_Footer.html"></iframe>
   <!--END OF Footer-->
-  
+
 </body>
 <script  src="./script_HomePage.js"></script>
 
