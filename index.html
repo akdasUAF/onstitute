@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Onstitute Home Page</title>
+  <link rel="stylesheet" href="./style_HomePage.css">
+  <link rel="stylesheet" href="./PublicFiles/style_HeaderFooter.css">
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css"> <!-- to use font-awesome icons -->
+  <script src="./PublicFiles/script_PublicFiles.js"></script>
+</head>
+<body>
+  <!-- HEADER-->
+  <iframe width="100%" height="80px" frameborder="0" style="position:sticky; top:0; left:0; z-index:5000" src="./PublicFiles/index_Header.html"></iframe>
+  <!--END OF HEADER-->
+
+  <!--Promo-->
+  <!--<iframe width="100%" height="120px" frameborder="0" style="position:absolute; bottom:1%; left:0; z-index:3000" src="../PublicFiles/index_PromoHorizontalScroll.html"></iframe>-->
+  <!--END OF PROMO-->
+
+  <!--MAIN CONTAINER-->
+  <div style="transition:all 2s">
+    <button class="w3-button w3-black w3-display-left" style="z-index:100000" onclick="plusDivs(-1)">&#10094;</button>
+    <button class="w3-button w3-black w3-display-right" style="z-index:100000" onclick="plusDivs(1)">&#10095;</button>
+
+    <div id="divSlide" class="showcase" style="background: url('./images_HomePage/backgroundDatascience.jpeg') no-repeat center center/cover">
+      <div class="showcase-top">
+        <!--<img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />-->
+        <!--<a href="#" class="btn btn-rounded">Sign In</a>-->
+      </div>
+      <div class="showcase-content">
+        <h1> Data-Science Dummy? </h1>
+        <p>Learn Faster than any Institute</p>
+        <a href="../FormsTemplate/index_WorkshopRegistrationPage.html" class="btn btn-xl"> Register for a free workshop to know how <i class="fas fa-chevron-right btn-icon"></i></a>
+      </div>
+      <iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="./PublicFiles/index_Upcoming.html"></iframe>
+    </div>
+
+    <div id="divSlide" class="showcase" style="background: url('./images_HomePage/backgroundProgramming.jpeg') no-repeat center center/cover">
+      <div class="showcase-top">
+        <!--<img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />-->
+        <!--<a href="#" class="btn btn-rounded">Sign In</a>-->
+      </div>
+      <div class="showcase-content">
+        <h1> Programming Beginner? </h1>
+        <p>Get the best trainer </p>
+        <a href="./F2FListTemplate/index_F2FListPage.html" class="btn btn-xl"> Explore our F2F/live lectures <i class="fas fa-chevron-right btn-icon"></i></a>
+      </div>
+      <iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="./PublicFiles/index_Upcoming.html"></iframe>
+    </div>
+
+    <div id="divSlide" class="showcase" style="background: url('./images_HomePage/backgroundValuePrice.jpeg') no-repeat center center/cover">
+      <div class="showcase-top">
+        <!--<img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />-->
+        <!--<a href="#" class="btn btn-rounded">Sign In</a>-->
+      </div>
+      <div class="showcase-content">
+        <h1> Frustrated with Cost? </h1>
+        <p>Start learning free of cost</p>
+        <a href="./CourseListTemplate/index_CourseListPage.html" class="btn btn-xl"> Explore our Free Courses <i class="fas fa-chevron-right btn-icon"></i></a>
+      </div>
+      <iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="./PublicFiles/index_Upcoming.html"></iframe>
+    </div>
+
+    <div id="divSlide" class="showcase" style="background: url('./images_HomePage/backgroundTutoring.jpeg') no-repeat center center/cover">
+      <div class="showcase-top">
+        <!--<img src="https://i.ibb.co/r5krrdz/logo.png" alt="" />-->
+        <!--<a href="#" class="btn btn-rounded">Sign In</a>-->
+      </div>
+      <div class="showcase-content">
+        <h1> Need personal training? </h1>
+        <p>Get a mentor</p>
+        <a href="./FormsTemplate/index_ConsultancyAppointment.html" class="btn btn-xl"> Register for a free consultancy <i class="fas fa-chevron-right btn-icon"></i></a>
+      </div>
+      <iframe width="100%" height="200px" frameborder="0" style="position:sticky; top:0; left:0; z-index:4000" src="./PublicFiles/index_Upcoming.html"></iframe>
+    </div>
+  </div>
+
+
+  <section class="tabs">
+    <div class="container">
+      <div id="tab-1" class="tab-item tab-border">
+        <i class="fas fa-door-open fa-3x"></i>
+        <p class="hide-sm"> Free consultancy</p>
+      </div>
+      <div id="tab-2" class="tab-item">
+        <i class="fas fa-tablet-alt fa-3x"></i>
+        <p class="hide-sm"> Learn anywhere </p>
+      </div>
+      <div id="tab-3" class="tab-item">
+        <i class="fas fa-coins fa-3x"></i>
+        <p class="hide-sm"> Affordable price </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tab-content">
+    <div class="container">
+      <!-- Tab Content 1 -->
+      <div id="tab-1-content" class="tab-content-item show">
+        <div class="tab-1-content-inner">
+          <div>
+            <p class="text-lg">We help you with a step-by-step plan and customized courses to ace data science/engineering.</p>
+            <a href="../FormsTemplate/index_ConsultancyAppointment.html" class="btn btn-lg"> Book a free consultancy </a>
+          </div>
+          <!--<img src="https://i.ibb.co/J2xDJV7/tab-content-1.png" alt="" />-->
+          <img src="./images_HomePage/stepsSuccess.png" alt="" />
+        </div>
+      </div>
+
+      <!-- Tab Content 2 -->
+      <div id="tab-2-content" class="tab-content-item">
+        <div class="tab-2-content-top">
+          <p class="text-lg">We made data education available, affordable, accesible to anyone, anytime, anywhere.</p>
+            <a href="../CourseListTemplate/index_CourseListPage.html" class="btn btn-lg"> Explore our courses </a>
+        </div>
+        <div class="tab-2-content-bottom">
+          <div>
+            <img src="./images_HomePage/expert.jpeg" width="200px" height="200px" alt="" />
+            <p class="text-md">Learn from Experts</p>
+            <p class="text-dark">All our instructors are university faculty or qualified industry professionals.</p>
+          </div>
+          <div>
+            <img src="./images_HomePage/handson.jpeg" width="200px" height="200px" alt="" />
+            <p class="text-md">Learn with Hands-on</p>
+            <p class="text-dark">All our courses are full of hands-on examples so that you can learn better.</p>
+          </div>
+          <div>
+            <img src="./images_HomePage/productive.jpeg" width="200px" height="200px" alt="" />
+            <p class="text-md">Be productive quickly</p>
+            <p class="text-dark">Dummy to pro in weeks with our proven pedagogical technique.</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Tab Content 3 -->
+      <div id="tab-3-content" class="tab-content-item">
+        <div class="text-center">
+          <p class="text-lg">Choose the learning mode that works best for you.</p>
+          <a href="../CourseListTemplate/index_CourseListPage.html" class="btn btn-lg"> Explore our courses </a>
+        </div>
+        <table class="table">
+          <thead>
+            <tr>
+              <th></th>
+              <th>Basic</th>
+              <th>Standard</th>
+              <th>Premium</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>Course price</td>
+              <td>Free</td>
+              <td>&#8377;1000</td>
+              <td>&#8377;1800/hr</td>
+            </tr>
+            <tr>
+              <td>Recorded video lecture</td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Access to Docker container and Virtual machines preconfigured with analytic software</td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <tr>
+              <td>Face-to-face online training</td>
+              <td><i class="fas fa-times"></i></td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>
+            <!--<tr>
+              <td>Access to HPC hardware (for selected courses)</td>
+              <td><i class="fas fa-times"></i></td>
+              <td><i class="fas fa-check"></i></td>
+              <td><i class="fas fa-check"></i></td>
+            </tr>-->
+            <tr>
+              <td>Mentored project</td>
+              <td><i class="fas fa-times"></i></td>
+              <td><i class="fas fa-times"></td>
+              <td><i class="fas fa-check"></td>
+            </tr>
+            <tr>
+              <td>Graded assignments</td>
+              <td><i class="fas fa-times"></i></td>
+              <td>2</td>
+              <td>4 + project</td>
+            </tr>
+            <tr>
+              <td>F2F training hours</td>
+              <td><i class="fas fa-times"></i></td>
+              <td>4 class-hrs, finished in 1 month max</td>
+              <td>6 class-hrs + project, finished in 2 months max</td>
+            </tr>
+            <tr>
+              <td colspan="100%">For training in group (e.g., classes in university, highschool, office, corporate training, etc.) contact us for rate</td>
+            </tr>
+          </tbody>
+        </table>
+        <div class="text-center">
+          <a href="../FormsTemplate/index_ConsultancyAppointment.html" class="btn btn-lg"> Book a Free Consultancy to Make the Right Choice</a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- END OF MAIN CONTAINER -->
+
+  <!--FOOTER -->
+  <iframe width="100%" height="300px" frameborder="0" src="../PublicFiles/index_Footer.html"></iframe>
+  <!--END OF Footer-->
+
+</body>
+<script  src="./script_HomePage.js"></script>
+
+</html>
