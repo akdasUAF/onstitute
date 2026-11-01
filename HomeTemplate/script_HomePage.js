@@ -52,3 +52,19 @@ function showDivs(n) {
   }
   x[slideIndex-1].style.display = "block";
 }
+
+// Automated slideshow code
+var slideTimer = null;
+
+function autoSlides() {
+  slideTimer = setInterval(function () {
+    plusDivs(1);
+  }, 2500); // slide advances every 2.5s (2500ms)
+}
+
+function stopSlides() {
+  clearInterval(slideTimer);
+  slideTimer = null;
+}
+
+autoSlides();
