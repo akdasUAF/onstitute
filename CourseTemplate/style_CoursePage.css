@@ -273,14 +273,15 @@
   z-index: 5000;        /* above .showcase (2000) */
   transition: background 0.2s, transform 0.2s;
 }
-#playlistToggle:hover
-{
-  background: #e67300;
-  transform: scale(1.08);
-}
 #playlistToggle.active
 {
   background: #cc5f00;
+}
+#playlistToggle:hover,
+#playlistToggle.active:hover
+{
+  background: #03a9f4;  /* same blue as the lesson highlight */
+  transform: scale(1.08);
 }
 #playlistPanel
 {
@@ -321,5 +322,3 @@
   background: #03a9f4;
   font-weight: 600;
 }
- 
-Claude finished the response
