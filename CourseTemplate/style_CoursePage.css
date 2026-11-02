@@ -250,3 +250,66 @@
     font-size: 2em;
   }
 }
+
+
+/* ---------- Playlist ---------- */
+#playlistToggle
+{
+  position: absolute;
+  top: 90px;            /* just below the 80px header iframe */
+  left: 10px;
+  width: 36px;
+  height: 36px;
+  border: none;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  z-index: 5000;        /* above .showcase (2000) */
+  transition: background 0.2s;
+}
+#playlistToggle:hover,
+#playlistToggle.active
+{
+  background: #03a9f4;
+}
+#playlistPanel
+{
+  position: absolute;
+  top: 132px;
+  left: 10px;
+  width: 260px;
+  max-height: 55vh;
+  overflow-y: auto;
+  background: rgba(0, 0, 0, 0.85);
+  border-radius: 8px;
+  z-index: 5000;
+  display: none;
+}
+#playlistPanel.open
+{
+  display: block;
+}
+#playlistList li
+{
+  list-style: none;
+}
+#playlistList li a
+{
+  display: block;
+  padding: 10px 14px;
+  color: #fff;
+  font-size: 14px;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.12);
+}
+#playlistList li a:hover
+{
+  background: rgba(3, 169, 244, 0.35);
+}
+#playlistList li a.playing
+{
+  background: #03a9f4;
+  font-weight: 600;
+}
