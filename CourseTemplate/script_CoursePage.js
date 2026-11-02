@@ -41,10 +41,10 @@ function getCourseContentsFromCourseId(courseIdVal) { //Change it to read from g
     //urlGoogleSheet = "https://docs.google.com/spreadsheets/d/e/2PACX-1vQ36Mm6ggImeLTbs-tplzDCVE4Di1PNp4YpxMOIjTcftBB77PjgfPWAPNFhM8-nlYrdRvCpkYUqRNU_/pub?gid=0&single=true&output=csv";
     //console.log(courseIdVal);
     var courseContents = {
-        "Onstitute_Course_LiveF2F": "https://onstitute.whereby.com/onstitute-python3727fc00-4545-452a-a72e-bd280f0a1cb8, https://onstitute.github.io/onstitutejupyterlab/lab/index.html, ./files_CourseMaterials/InstructorBios/bio_ArghyaKusumDas.html, https://docs.google.com/document/d/e/2PACX-1vQiQxT9GePPVAmv11_EGKkjr2Tm99Z_qsWuJ3lsTK4Gwpf1tnQc7tw4wx0WAcOQHgLjO6UUPF9rGuWD/pub?embedded=true",
-        "Onstitute_Course_Python101": "https://www.youtube.com/embed/videoseries?list=PLG6Y-NQXjFeZL7gfbiczvv3I8WXef1ikB, https://onstitute.github.io/onstitutejupyterlab/lab/index.html, ./files_CourseMaterials/InstructorBios/bio_ArghyaKusumDas.html, https://docs.google.com/document/d/e/2PACX-1vQiQxT9GePPVAmv11_EGKkjr2Tm99Z_qsWuJ3lsTK4Gwpf1tnQc7tw4wx0WAcOQHgLjO6UUPF9rGuWD/pub?embedded=true",
-        "Onstitute_Course_CPP101": "https://www.youtube.com/embed/videoseries?list=PLG6Y-NQXjFeYNukl0K7KOfuXq0SheFFpG, https://onstitute.github.io/onstitutejupyterlab/lab/index.html, ./files_CourseMaterials/InstructorBios/bio_ArghyaKusumDas.html, https://docs.google.com/document/d/e/2PACX-1vR9YEFibxgTZ2ArahxAFSy_0tHSEuxL7Lh638pcrOe5Ukfa9-rfjl63TF5yqwTL43LKCNkFJPXIHatv/pub?embedded=true",
-        "Onstitute_Course_Java101": "https://www.youtube.com/embed/videoseries?list=PLG6Y-NQXjFeZoRs632wHPkc4-42LOdfRw, https://onstitute.github.io/onstitutejupyterlab/lab/index.html, ./files_CourseMaterials/InstructorBios/bio_ArghyaKusumDas.html, https://docs.google.com/document/d/e/2PACX-1vQ9nx8cmiA3pdHxnZLEHzrffLuoJCYTcW5s3mNga_SPyncB8uzMD5QTYuNgs_9a0qKjo7TSl0yUD5Ho/pub?embedded=true",
+        "Onstitute_Course_LiveF2F": "https://onstitute.whereby.com/onstitute-python3727fc00-4545-452a-a72e-bd280f0a1cb8, https://akdasuaf.github.io/OnstituteJupyterLite/lab/index.html, ./files_CourseMaterials/InstructorBios/bio_ArghyaKusumDas.html, https://docs.google.com/document/d/e/2PACX-1vQiQxT9GePPVAmv11_EGKkjr2Tm99Z_qsWuJ3lsTK4Gwpf1tnQc7tw4wx0WAcOQHgLjO6UUPF9rGuWD/pub?embedded=true",
+        "Onstitute_Course_Python101": "https://www.youtube.com/embed/videoseries?list=PLG6Y-NQXjFeZL7gfbiczvv3I8WXef1ikB, https://akdasuaf.github.io/OnstituteJupyterLite/lab/index.html, ./files_CourseMaterials/InstructorBios/bio_ArghyaKusumDas.html, https://docs.google.com/document/d/e/2PACX-1vQiQxT9GePPVAmv11_EGKkjr2Tm99Z_qsWuJ3lsTK4Gwpf1tnQc7tw4wx0WAcOQHgLjO6UUPF9rGuWD/pub?embedded=true",
+        "Onstitute_Course_CPP101": "https://www.youtube.com/embed/videoseries?list=PLG6Y-NQXjFeYNukl0K7KOfuXq0SheFFpG, https://akdasuaf.github.io/OnstituteJupyterLite/lab/index.html, ./files_CourseMaterials/InstructorBios/bio_ArghyaKusumDas.html, https://docs.google.com/document/d/e/2PACX-1vR9YEFibxgTZ2ArahxAFSy_0tHSEuxL7Lh638pcrOe5Ukfa9-rfjl63TF5yqwTL43LKCNkFJPXIHatv/pub?embedded=true",
+        "Onstitute_Course_Java101": "https://www.youtube.com/embed/videoseries?list=PLG6Y-NQXjFeZoRs632wHPkc4-42LOdfRw, https://akdasuaf.github.io/OnstituteJupyterLite/lab/index.html, ./files_CourseMaterials/InstructorBios/bio_ArghyaKusumDas.html, https://docs.google.com/document/d/e/2PACX-1vQ9nx8cmiA3pdHxnZLEHzrffLuoJCYTcW5s3mNga_SPyncB8uzMD5QTYuNgs_9a0qKjo7TSl0yUD5Ho/pub?embedded=true",
         "Onstitute_Course_Programming303": "https://www.youtube.com/embed/videoseries?list=PLG6Y-NQXjFeZPXgF5x3mhyRVj9W0fQR2l, ./files_CourseMaterials/CustomIDEs/ide_MultipleIDE.html, ./files_CourseMaterials/InstructorBios/bio_ArghyaKusumDas.html, https://docs.google.com/document/d/e/2PACX-1vS2aqZjMN26C1HBSkHsrd8dU5LN1CPaqJM5-LLPis-HNMvqSqAY8ddUu7qEB2X6kZwBbm88oI10cgEF/pub?embedded=true",
         "Onstitute_Course_BigData101": "https://www.youtube.com/embed/videoseries?list=PL4n5zDoQ7GrnI9odnWCKvJzSsVdQfe6t3, ./files_CourseMaterials/CustomIDEs/ide_None.html, ./files_CourseMaterials/InstructorBios/bio_ArghyaKusumDas.html",
         "Onstitute_Course_Docker101": "https://www.youtube.com/embed/videoseries?list=PL4n5zDoQ7Grmzaqq9RFvTA_uIv56evEsB, ./files_CourseMaterials/CustomIDEs/ide_None.html, ./files_CourseMaterials/InstructorBios/bio_ArghyaKusumDas.html",
@@ -80,3 +80,58 @@ function loadCourseMaterials(position) { //Similar to loadVideo but executes on 
     //console.log(urlToDisplay);
     iframeCouseMaterialsContainer.src = urlToDisplay;
 }
+
+
+/* ---------- Playlist ---------- */
+// Edit this list: title + any YouTube link (watch?v=..., youtu.be/..., or embed/...)
+const playlistVideos = [
+  { title: "Lesson 1 - Introduction",  url: "https://www.youtube.com/watch?v=ouJ6-Q3nBPk" },
+  { title: "Lesson 2 - Getting Started", url: "https://www.youtube.com/watch?v=_ZJkvlZSLhc" },
+  { title: "Lesson 3 - Core Concepts",  url: "https://www.youtube.com/watch?v=kUwq1nZiyDw" },
+  { title: "Lesson 4 - Practice",       url: "https://www.youtube.com/watch?v=WR3iK7xCr_Q&t=117s" }
+];
+
+const playlistToggle = document.getElementById('playlistToggle');
+const playlistPanel = document.getElementById('playlistPanel');
+const playlistList = document.getElementById('playlistList');
+
+/* Convert a normal YouTube link into an embeddable URL */
+function toEmbedUrl(url) {
+  try {
+    const u = new URL(url);
+    let id = null;
+    if (u.hostname.includes('youtu.be')) {
+      id = u.pathname.slice(1);
+    } else if (u.pathname.startsWith('/embed/')) {
+      id = u.pathname.split('/')[2];
+    } else {
+      id = u.searchParams.get('v');
+    }
+    return id ? "https://www.youtube.com/embed/" + id + "?autoplay=1" : url;
+  } catch (e) {
+    return url; // not a valid URL, use as is
+  }
+}
+
+/* Build the playlist items */
+playlistVideos.forEach(video => {
+  const li = document.createElement('li');
+  const a = document.createElement('a');
+  a.href = '#';
+  a.textContent = video.title;
+  a.addEventListener('click', e => {
+    e.preventDefault();
+    document.getElementById('iframe_CourseVideo').src = toEmbedUrl(video.url);
+    playlistList.querySelectorAll('a').forEach(link => link.classList.remove('playing'));
+    a.classList.add('playing');
+  });
+  li.appendChild(a);
+  playlistList.appendChild(li);
+});
+
+/* Open / close the playlist */
+playlistToggle.addEventListener('click', () => {
+  const isOpen = playlistPanel.classList.toggle('open');
+  playlistToggle.classList.toggle('active', isOpen);
+  playlistToggle.setAttribute('aria-expanded', isOpen);
+});
