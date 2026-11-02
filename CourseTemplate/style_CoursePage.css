@@ -19,6 +19,9 @@
   background-repeat: no-repeat;
   background-size: 40px;
   background-position: center;
+  background-color: #ff8c00;  /* dark orange circle */
+  border-radius: 50%;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   z-index: 5000;
   transition: 0.5s;
@@ -32,7 +35,13 @@
   background-repeat: no-repeat;
   background-size: 25px;
   background-position: center;
+  background-color: #ff8c00;  /* the background shorthand above resets the color */
   cursor: pointer;
+}
+.toggle:hover,
+.toggle.active:hover
+{
+  background-color: #fff;     /* circle turns white on hover */
 }
  
 .showcase
