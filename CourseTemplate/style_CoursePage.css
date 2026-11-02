@@ -6,7 +6,7 @@
   box-sizing: border-box;
   font-family: 'Poppins', sans-serif;
 }
-
+ 
 /*Toggle*/
 .toggle
 {
@@ -34,7 +34,7 @@
   background-position: center;
   cursor: pointer;
 }
-
+ 
 .showcase
 {
   position: absolute;
@@ -55,7 +55,7 @@
 {
   right: 35%;
 }
-
+ 
 .showcase iframe
 {
   position: absolute;
@@ -64,7 +64,7 @@
   width: 90vw;
   height: 50vw;/*match aspect ration (16:9) of YouTube Video*/
 }
-
+ 
 .showcase video
 {
   position: absolute;
@@ -90,7 +90,7 @@
   position: relative;
   z-index: 10;
 }
-
+ 
 .text h2
 {
   font-size: 5em;
@@ -158,7 +158,7 @@
 {
   transform: scale(0.5) translateY(-15px);
 }
-
+ 
 .menu
 {
   position: absolute;
@@ -188,7 +188,7 @@
 {
   color: #03a9f4; 
 }
-
+ 
 .aboutcourse
 {
   position: absolute;
@@ -233,7 +233,7 @@
 {
     transform: scale(0.8) translateY(-5px);
 }
-
+ 
 @media (max-width: 991px)
 {
   .showcase,
@@ -250,34 +250,42 @@
     font-size: 2em;
   }
 }
-
-
+ 
+ 
 /* ---------- Playlist ---------- */
 #playlistToggle
 {
   position: absolute;
   top: 90px;            /* just below the 80px header iframe */
   left: 10px;
-  width: 36px;
-  height: 36px;
+  width: 56px;
+  height: 56px;
   border: none;
-  border-radius: 6px;
-  background: rgba(0, 0, 0, 0.65);
+  border-radius: 50%;   /* circle */
+  background: #ff8c00;  /* dark orange */
   color: #fff;
-  font-size: 16px;
+  font-size: 26px;      /* bigger icon */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4);
   cursor: pointer;
   z-index: 5000;        /* above .showcase (2000) */
-  transition: background 0.2s;
+  transition: background 0.2s, transform 0.2s;
 }
-#playlistToggle:hover,
+#playlistToggle:hover
+{
+  background: #e67300;
+  transform: scale(1.08);
+}
 #playlistToggle.active
 {
-  background: #03a9f4;
+  background: #cc5f00;
 }
 #playlistPanel
 {
   position: absolute;
-  top: 132px;
+  top: 154px;
   left: 10px;
   width: 260px;
   max-height: 55vh;
@@ -313,3 +321,5 @@
   background: #03a9f4;
   font-weight: 600;
 }
+ 
+Claude finished the response
